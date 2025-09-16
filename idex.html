@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kenyan Student Interactive Page</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>🇰🇪 Kenyan Student Interactive Page</h1>
+  <p>Welcome to my assignment demo. Hapo sawa! 😎</p>
+
+  <!-- Part 1: Event Handling -->
+  <section>
+    <h2>🎉 Event Handling</h2>
+    <button id="toggleBtn">Show/Hide Campus Life Tip</button>
+    <p id="message" style="display:none;">
+      Always balance classwork and social life. Si unajua? 📚🎶
+    </p>
+  </section>
+
+  <!-- Part 2: Interactive Elements -->
+  <section>
+    <h2>🎮 Interactive Elements</h2>
+    
+    <!-- Tea or Coffee Toggle -->
+    <button id="modeToggle">☕ Tea or Coffee?</button>
+    <p id="modeMsg">Currently: Tea ☕</p>
+
+    <!-- Class Attendance Counter -->
+    <div>
+      <p>Number of Classes Attended: <span id="counterValue">0</span></p>
+      <button id="incrementBtn">Attended +1</button>
+      <button id="decrementBtn">Missed -1</button>
+    </div>
+
+    <!-- FAQ Section -->
+    <div class="faq">
+      <h3 class="faq-question">How do I access HELB loan? ⬇️</h3>
+      <p class="faq-answer" style="display:none;">
+        Register on the HELB portal, fill the loan application form, and submit before deadline. Hakuna stress! 💸
+      </p>
+    </div>
+  </section>
+
+  <!-- Part 3: Form Validation -->
+  <section>
+    <h2>📋 MMU Club Signup Form</h2>
+    <form id="signupForm">
+      <label>
+        Full Name: <input type="text" id="name">
+        <span class="error" id="nameError"></span>
+      </label><br><br>
+
+      <label>
+        Student Email: <input type="email" id="email" placeholder="yourname@students.mmu.ac.ke">
+        <span class="error" id="emailError"></span>
+      </label><br><br>
+
+      <label>
+        Password: <input type="password" id="password">
+        <span class="error" id="passwordError"></span>
+      </label><br><br>
+
+      <button type="submit">Join the Club</button>
+      <p id="formSuccess" style="color:green;"></p>
+    </form>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
